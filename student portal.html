@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="student-portal">
+
+    <h1>Student Portal</h1>
+
+    <p class="welcome">
+        Welcome to Student Portal
+    </p>
+
+
+    <!-- Portal Container -->
+
+    <div class="portal-container">
+
+
+        <!-- Add Student -->
+
+        <section>
+
+            <h2>Add Student</h2>
+
+            <label>Name:</label>
+            <input id="newName">
+
+            <label>ID:</label>
+            <input id="newId">
+
+            <label>Department:</label>
+            <input id="newDepartment">
+
+            <button onclick="addStudent()">
+                Add Student
+            </button>
+
+            <p id="addMessage"></p>
+
+        </section>
+
+
+        <!-- Search Student -->
+
+        <section>
+
+            <h2>Search Student</h2>
+
+            <label>Student ID:</label>
+            <input id="searchId">
+
+            <button onclick="searchStudent()">
+                Search
+            </button>
+
+            <p id="searchResult"></p>
+
+        </section>
+
+
+        <!-- Remove Student -->
+
+        <section>
+
+            <h2>Remove Student</h2>
+
+            <label>Student ID:</label>
+            <input id="removeId">
+
+            <button onclick="removeStudent()">
+                Remove
+            </button>
+
+            <p id="removeMessage"></p>
+
+        </section>
+
+
+        <!-- Student History -->
+
+        <section>
+
+            <h2>Student History</h2>
+
+            <p id="studentHistory"></p>
+
+        </section>
+
+
+        <!-- Notice -->
+
+        <section>
+
+            <h2>Notice</h2>
+
+            <label>Write Notice:</label>
+
+            <input id="noticeText">
+
+            <button onclick="submitNotice()">
+                Submit
+            </button>
+
+            <p id="notice"></p>
+
+        </section>
+
+
+    </div>
+
+
+    <!-- Logout -->
+
+    <button class="logout-button" onclick="logout()">
+        Logout
+    </button>
+
+
+    <!-- JavaScript -->
+
+    <script src="student script.js"></script>
+
+</body>
+
+</html>
+
